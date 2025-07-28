@@ -1,0 +1,9 @@
+NAME       STATUS   ROLES           AGE     VERSION
+minikube   Ready    control-plane   4m50s   v1.33.1
+kubectl get nodes
+NAME              STATUS   AGE
+default           Active   5m47s
+kube-node-lease   Active   5m47s
+kube-public       Active   5m47s
+kube-system       Active   5m47s
+kubectl get namespaces
