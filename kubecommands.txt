@@ -7,3 +7,19 @@ kube-node-lease   Active   5m47s
 kube-public       Active   5m47s
 kube-system       Active   5m47s
 kubectl get namespaces
+kubectl get pod -A
+NAMESPACE     NAME                               READY   STATUS    RESTARTS        AGE
+kube-system   coredns-674b8bbfcf-mnxbm           1/1     Running   0               7m51s
+kube-system   etcd-minikube                      1/1     Running   0               7m56s
+kube-system   kube-apiserver-minikube            1/1     Running   0               7m56s
+kube-system   kube-controller-manager-minikube   1/1     Running   0               7m57s
+kube-system   kube-proxy-2dh7b                   1/1     Running   0               7m51s
+kube-system   kube-scheduler-minikube            1/1     Running   0               7m56s
+kube-system   storage-provisioner                1/1     Running   1 (7m21s ago)   7m54s
+kubectl get services -A
+NAMESPACE     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+default       kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  11m
+kube-system   kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   11m
+NAMESPACE     NAME         TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)                  AGE
+default       kubernetes   ClusterIP   10.96.0.1    <none>        443/TCP                  13m
+kube-system   kube-dns     ClusterIP   10.96.0.10   <none>        53/UDP,53/TCP,9153/TCP   13m
